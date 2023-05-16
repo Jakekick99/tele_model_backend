@@ -10,7 +10,12 @@ WORKDIR /myapp
 
 # Install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt --no-index --find-links file:///tmp/packages
+RUN pip install docker
+RUN pip install pillow
+RUN pip install numpy
+RUN pip install tensorflow
+RUN pip install scikit-learn
+RUN pip install hugginface-hub
 
 # Copy the Django project
 COPY . .
