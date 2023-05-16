@@ -10,7 +10,7 @@ WORKDIR /myapp
 
 # Install dependencies
 COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt --no-index --find-links file:///tmp/packages
 
 # Copy the Django project
 COPY . .
