@@ -1,0 +1,6 @@
+Django
+Pillow
+numpy
+scikit-image
+tensorflow
+huggingface-hub
